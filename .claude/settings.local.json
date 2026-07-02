@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir -p \"c:/Users/elija/Documents/SundayBello/uploads/photos\" \"c:/Users/elija/Documents/SundayBello/uploads/videos\")",
+      "Bash(php -v)",
+      "Bash(curl -s -i -X POST http://localhost/SundayBello/submit_tribute.php -F 'name=Test User' -F 'message=A wonderful memory' -F source=file)",
+      "Bash(curl -s -i -X POST http://localhost/SundayBello/submit_tribute.php -F 'name=Photo Only Person' -F message= -F source=file -F 'media=@images/pic.jpeg;type=image/jpeg')",
+      "Bash(curl -s -i -X POST http://localhost/SundayBello/submit_tribute.php -F 'name=Empty Person' -F message= -F source=file)"
+    ],
+    "additionalDirectories": [
+      "c:\\Users\\elija\\Documents\\SundayBello\\uploads"
+    ]
+  }
+}

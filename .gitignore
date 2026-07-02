@@ -1,0 +1,29 @@
+# Real credentials — never commit this. Copy config.example.php to
+# config.php locally and on the server; fill in real values there.
+/config.php
+
+# Database dumps/exports can contain real visitor-submitted content
+# (names, messages). schema.sql is the one exception — it's just
+# table structure, no data, safe to keep in the repo.
+*.sql
+!schema.sql
+
+# Real photos/videos people upload through the site — private content,
+# not meant for the public repo. .htaccess (execution lockdown) stays tracked.
+/uploads/photos/*
+/uploads/videos/*
+!/uploads/photos/.gitkeep
+!/uploads/videos/.gitkeep
+
+# Editor / IDE
+/.idea/
+/.vscode/
+/.claude/
+
+# OS cruft
+*.DS_Store
+
+# Logs and stray backup files
+*.log
+*.bak
+*~

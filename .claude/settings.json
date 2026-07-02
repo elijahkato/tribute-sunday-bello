@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//c/laragon/etc/apache2/sites-enabled/**)",
+      "Read(//c/laragon/bin/apache/**)",
+      "Bash(grep -n -i \"DirectoryIndex\" /c/laragon/bin/apache/httpd-2.4.66-260223-Win64-VS18/conf/httpd.conf /c/laragon/etc/apache2/*.conf 2>&1)",
+      "Read(//c/laragon/bin/apache/httpd-2.4.66-260223-Win64-VS18/conf/**)",
+      "Bash(curl -s -i http://localhost/SundayBello/admin/)",
+      "Bash(curl -s -i http://localhost/SundayBello/includes/)"
+    ]
+  }
+}

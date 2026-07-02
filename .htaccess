@@ -1,0 +1,11 @@
+# Prevent Apache from listing directory contents when there's no index file
+# (e.g. browsing straight to /admin/ or /includes/ instead of a specific page).
+Options -Indexes
+
+# Block direct web access to files that should only ever be read by PHP itself
+# (config.php) or that should never be public at all (SQL dumps/schema, stray
+# editor backups). config.php is already safe because .php always executes
+# rather than being served as text, but this covers renamed/backup copies too.
+<FilesMatch "(^config\.php$|\.sql$|\.bak$|~$)">
+    Require all denied
+</FilesMatch>
