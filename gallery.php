@@ -36,7 +36,7 @@ require __DIR__ . '/includes/header.php';
                 <?php endforeach; ?>
             </div>
 
-            <p class="tributes-intro"><a href="tributes.php">Leave a tribute</a> to share your own photo or video.</p>
+            <p class="tributes-intro"><a href="tributes.php#add-tribute">Leave a tribute</a> to share your own photo or video.</p>
         </section>
 
 <?php require __DIR__ . '/includes/footer.php'; ?>

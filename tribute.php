@@ -40,7 +40,7 @@ require __DIR__ . '/includes/header.php';
                         <p class="tribute-body"><?= nl2br(h($tribute['message'])) ?></p>
                     <?php endif; ?>
                     <p class="tribute-meta">
-                        Left by <?= h($tribute['name']) ?>
+                        Left by <span class="tribute-flow-name"><?= h($tribute['name']) ?></span>
                         <?php $relationship = relationship_label($tribute['relationship'] ?? null); ?>
                         <?php if ($relationship !== ''): ?>
                             <span class="tribute-flow-relationship"><?= h($relationship) ?></span>

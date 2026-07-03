@@ -63,9 +63,9 @@ function render_tribute_flow_card(array $tribute, array $mediaItems): string {
         $html .= '<p class="tribute-flow-excerpt tribute-flow-excerpt--media">Shared a memory</p>';
     }
     $relationship = relationship_label($tribute['relationship'] ?? null);
-    $html .= '<p class="tribute-flow-meta">' . h($tribute['name'])
-        . ($relationship !== '' ? ' <span class="tribute-flow-relationship">' . h($relationship) . '</span>' : '')
-        . ' &middot; ' . h(date('M j, Y', strtotime($tribute['created_at']))) . '</p>';
+    $html .= '<p class="tribute-flow-meta"><span class="tribute-flow-name">' . h($tribute['name']) . '</span>'
+        . ($relationship !== '' ? '<span class="tribute-flow-relationship">' . h($relationship) . '</span>' : '')
+        . '&middot; ' . h(date('M j, Y', strtotime($tribute['created_at']))) . '</p>';
     $html .= '</div></a>';
 
     return $html;

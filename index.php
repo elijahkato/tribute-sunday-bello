@@ -179,7 +179,7 @@ require __DIR__ . '/includes/header.php';
                     <?php endforeach; ?>
                 </div>
             <?php endif; ?>
-            <a class="view-all-link" href="tributes.php">Read all tributes &amp; share your own &rarr;</a>
+            <a class="view-all-link" href="tributes.php#add-tribute">Read all tributes &amp; share your own &rarr;</a>
         </section>
 
         <hr class="section-divider">

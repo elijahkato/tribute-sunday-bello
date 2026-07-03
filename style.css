@@ -327,6 +327,11 @@ body {
 
 .page-section {
     padding: 3.5rem 0;
+    scroll-margin-top: 100px;
+}
+
+.upload-box {
+    scroll-margin-top: 100px;
 }
 
 .section-title {
@@ -707,6 +712,18 @@ body {
     display: none;
 }
 
+.tribute-flow-name {
+    display: inline-block;
+    background: #2a2a2a;
+    color: #ffffff;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    padding: 0.15rem 0.5rem;
+    border-radius: 10px;
+    margin-right: 0.35rem;
+}
+
 .tribute-flow-relationship {
     display: inline-block;
     background: var(--gold-tint);
@@ -717,7 +734,7 @@ body {
     text-transform: uppercase;
     padding: 0.15rem 0.5rem;
     border-radius: 10px;
-    margin-left: 0.35rem;
+    margin-right: 0.35rem;
 }
 
 .tribute-search-bar {

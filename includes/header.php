@@ -28,7 +28,7 @@ $pageTitle = $pageTitle ?? 'In Loving Memory';
                 <p class="hero-dates">14 April 1974 &ndash; 24 June 2026</p>
                 <p class="hero-intro">We gather to celebrate a life fully lived &mdash; a husband, father, mentor, and friend who touched every soul he met.</p>
                 <div class="hero-actions">
-                    <a class="hero-btn hero-btn--primary" href="tributes.php">Leave a Tribute &rarr;</a>
+                    <a class="hero-btn hero-btn--primary" href="tributes.php#add-tribute">Leave a Tribute &rarr;</a>
                     <a class="hero-btn hero-btn--outline" href="index.php#biography">Read Biography</a>
                 </div>
             </div>

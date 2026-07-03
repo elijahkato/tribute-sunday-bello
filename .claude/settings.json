@@ -6,7 +6,13 @@
       "Bash(grep -n -i \"DirectoryIndex\" /c/laragon/bin/apache/httpd-2.4.66-260223-Win64-VS18/conf/httpd.conf /c/laragon/etc/apache2/*.conf 2>&1)",
       "Read(//c/laragon/bin/apache/httpd-2.4.66-260223-Win64-VS18/conf/**)",
       "Bash(curl -s -i http://localhost/SundayBello/admin/)",
-      "Bash(curl -s -i http://localhost/SundayBello/includes/)"
+      "Bash(curl -s -i http://localhost/SundayBello/includes/)",
+      "Bash(git rm *)",
+      "Bash(rm -f sunday_export.sql)",
+      "Bash(git add *)",
+      "Bash(curl -s http://localhost/SundayBello/index.php)",
+      "Bash(curl -s http://localhost/SundayBello/tributes.php)",
+      "Bash(curl -s \"http://localhost/SundayBello/tribute.php?id=1\")"
     ]
   }
 }
